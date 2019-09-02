@@ -125,8 +125,7 @@ class Gogogate2API:
                         return 0.0
                     else:
                         celcius = float(device['temperature'])
-                        fahrenheit = 9.0/5.0 * celcius + 32.0
-                        return fahrenheit
+                        return celcius
         return False
 
     def activate(self, device_id, expected_current_state):
